@@ -69,7 +69,7 @@ st.title("Indian fresher job market")
 st.caption("Who gets hired — and why?")
 
 # ── Metric cards ─────────────────────────────────────────────────────────────
-hired = filtered[filtered['hiring_stage'] == 'Hired']
+hired = filtered[filtered['hiring_stage'] == 'Offer']
 offer_rate = round(len(hired) / len(filtered) * 100, 1) if len(filtered) > 0 else 0
 top_sector = filtered['sector'].value_counts().idxmax() if len(filtered) > 0 else "—"
 
